@@ -1,0 +1,764 @@
+/* =====================================================================
+   Beyond the IDE — Outside the IDE section + Services/Capabilities
+   Ebube Udorie (Technikraft) — Titanium Atelier & Liquid Amber
+   ===================================================================== */
+
+/* -----------------------------------------------------------------------
+   Keyframes
+   ----------------------------------------------------------------------- */
+@keyframes outside-float {
+  0%, 100% { transform: rotate(-2deg) translateY(0px); }
+  50%       { transform: rotate(-2deg) translateY(-6px); }
+}
+@keyframes outside-float-alt {
+  0%, 100% { transform: rotate(2deg) translateY(0px); }
+  50%       { transform: rotate(2deg) translateY(-5px); }
+}
+@keyframes outside-shimmer-line {
+  from { background-position: -200% center; }
+  to   { background-position: 200% center; }
+}
+@keyframes outside-tag-pulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(217,119,6,.0); }
+  50%       { box-shadow: 0 0 0 5px rgba(217,119,6,.08); }
+}
+@keyframes capability-marker-spin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+/* -----------------------------------------------------------------------
+   Section wrapper
+   ----------------------------------------------------------------------- */
+.outside-section {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+/* -----------------------------------------------------------------------
+   Heading row
+   ----------------------------------------------------------------------- */
+.outside-heading {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.outside-heading .section-title {
+  font-size: clamp(44px, 6vw, 86px);
+}
+
+/* Amber shimmer underline on title */
+.outside-heading .section-title span,
+.outside-heading .section-title {
+  position: relative;
+}
+
+.outside-heading > p {
+  max-width: 400px;
+  font-size: 15.5px;
+  line-height: 1.75;
+  color: var(--color-muted);
+}
+
+/* -----------------------------------------------------------------------
+   Topic tags strip
+   ----------------------------------------------------------------------- */
+.outside-topics {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 36px 0 70px;
+  padding: 16px 0;
+  border-top: 1px solid var(--color-line);
+  border-bottom: 1px solid var(--color-line);
+  overflow-x: auto;
+  scrollbar-width: none;
+  flex-wrap: wrap;
+}
+
+.outside-topics::-webkit-scrollbar {
+  display: none;
+}
+
+.outside-topics > span {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font: 700 10.5px var(--font-jetbrains-mono), monospace;
+  letter-spacing: .09em;
+  text-transform: uppercase;
+  color: var(--color-cocoa-soft);
+  background: #FFFFFF;
+  border: 1px solid var(--color-line);
+  border-radius: 999px;
+  padding: 7px 14px;
+  white-space: nowrap;
+  transition: all 200ms cubic-bezier(.16,1,.3,1);
+  animation: outside-tag-pulse 3s ease-in-out infinite;
+}
+
+.outside-topics > span:nth-child(2) { animation-delay: .5s; }
+.outside-topics > span:nth-child(3) { animation-delay: 1s; }
+.outside-topics > span:nth-child(4) { animation-delay: 1.5s; }
+
+.outside-topics > span svg {
+  color: var(--color-tangerine-ink);
+}
+
+.outside-topics .outside-side-note {
+  margin-left: auto;
+  color: var(--color-muted);
+  font-family: var(--font-delius), sans-serif;
+  font-size: 15px;
+  white-space: nowrap;
+  font-style: italic;
+}
+
+/* -----------------------------------------------------------------------
+   Stories grid
+   ----------------------------------------------------------------------- */
+.outside-stories {
+  display: grid;
+  gap: 90px;
+}
+
+/* Base story: photo left, copy right */
+.outside-story {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  align-items: center;
+  gap: 8%;
+}
+
+/* Photo figure */
+.outside-photo {
+  margin: 0;
+  min-width: 0;
+  transform: rotate(-2deg);
+  transition: transform .4s cubic-bezier(.16,1,.3,1);
+}
+
+.outside-story:hover .outside-photo {
+  transform: rotate(-1deg) translateY(-4px);
+}
+
+.outside-photo:hover img {
+  transform: scale(1.025);
+}
+
+.outside-photo figcaption {
+  display: flex;
+  gap: 17px;
+  margin-top: 16px;
+  padding-left: 4px;
+  color: var(--color-muted);
+  font: 600 12px var(--font-jetbrains-mono), monospace;
+}
+
+.outside-photo figcaption > span {
+  font: 700 10px var(--font-jetbrains-mono), monospace;
+  color: var(--color-tangerine-ink);
+  background: rgba(217,119,6,.08);
+  border: 1px solid rgba(217,119,6,.2);
+  border-radius: 6px;
+  padding: 2px 7px;
+}
+
+/* Image frame */
+.outside-image {
+  position: relative;
+  aspect-ratio: 1.15;
+  /* Signature rounded shape: tall top-left corner */
+  border-radius: 90px 18px 18px 18px;
+  overflow: hidden;
+  background: var(--color-peach);
+  border: 1px solid var(--color-line);
+  box-shadow:
+    0 24px 48px -8px rgba(20,24,27,.12),
+    0 0 0 1px rgba(255,255,255,.6) inset;
+}
+
+.outside-image img {
+  object-fit: cover;
+  transition: transform .6s cubic-bezier(.16,1,.3,1);
+}
+
+.outside-photo:hover img {
+  transform: scale(1.03);
+}
+
+/* Amber gradient overlay at bottom of each image */
+.outside-image::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 40%;
+  background: linear-gradient(to top, rgba(20,24,27,.18) 0%, transparent 100%);
+  pointer-events: none;
+}
+
+/* -----------------------------------------------------------------------
+   Bookshelf bento — books FILL the card in a dark editorial grid
+   The div.outside-image.outside-bookshelf IS the grid container itself.
+   ----------------------------------------------------------------------- */
+.outside-image.outside-bookshelf {
+  /* Grid layout — fills the card completely */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 2px;
+  background: #1C1A17;
+  padding: 0;
+  /* Preserve the outer image shape */
+  position: relative;
+  overflow: hidden;
+}
+
+/* Each book figure fills its grid cell */
+.outside-image.outside-bookshelf figure {
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  display: block;
+  cursor: pointer;
+  background: #2A2519;
+}
+
+/* First book: editorial hero — spans both rows */
+.outside-image.outside-bookshelf figure:first-child {
+  grid-row: 1 / 3;
+}
+
+/* Image fills the entire cell (position: relative set inline in JSX) */
+.outside-image.outside-bookshelf figure > div {
+  position: absolute !important;
+  inset: 0;
+  width: 100% !important;
+  height: 100% !important;
+  aspect-ratio: unset;
+  border-radius: 0;
+  box-shadow: none;
+  background: #2A2519;
+}
+
+/* Subtle grid lines between cells */
+.outside-image.outside-bookshelf figure + figure {
+  border-left: 2px solid rgba(255,255,255,.04);
+}
+
+/* Hover: scale the cover image */
+.outside-image.outside-bookshelf figure:hover > div img {
+  transform: scale(1.07);
+  transition: transform .5s cubic-bezier(.16,1,.3,1);
+}
+.outside-image.outside-bookshelf figure > div img {
+  transition: transform .5s cubic-bezier(.16,1,.3,1);
+  object-fit: cover !important;
+}
+
+/* Dark overlay on each book cell — slides up title on hover */
+.outside-image.outside-bookshelf figure::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(15,10,5,.9) 0%, rgba(15,10,5,.2) 45%, transparent 100%);
+  z-index: 2;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity .35s;
+}
+
+.outside-image.outside-bookshelf figure:hover::after {
+  opacity: 1;
+}
+
+/* Book title — slides up on hover */
+.outside-image.outside-bookshelf figcaption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 3;
+  padding: 10px 8px 8px;
+  font: 700 8.5px var(--font-jetbrains-mono), monospace;
+  text-transform: uppercase;
+  letter-spacing: .04em;
+  color: #FFFFFF;
+  line-height: 1.35;
+  transform: translateY(8px);
+  opacity: 0;
+  transition: all .35s cubic-bezier(.16,1,.3,1);
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.outside-image.outside-bookshelf figure:hover figcaption {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* "Still reading" slot — amber accent cell */
+.outside-image.outside-bookshelf .outside-book-next {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(135deg, rgba(217,119,6,.2) 0%, rgba(180,83,9,.1) 100%);
+  border: 1.5px dashed rgba(217,119,6,.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 10px 6px;
+  gap: 5px;
+}
+
+.outside-image.outside-bookshelf .outside-book-next > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  background: transparent;
+  border: none;
+  padding: 0;
+  position: static;
+}
+
+.outside-image.outside-bookshelf .outside-book-next > div span {
+  font: 700 8px var(--font-jetbrains-mono), monospace;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  color: var(--color-tangerine);
+}
+
+.outside-image.outside-bookshelf .outside-book-next > div em {
+  font: italic 10px/1.35 var(--font-fredoka), sans-serif;
+  color: rgba(247,246,242,.75);
+  max-width: 88px;
+}
+
+/* Hide the duplicate figcaption inside the reading slot */
+.outside-image.outside-bookshelf .outside-book-next > figcaption {
+  display: none;
+}
+
+/* Mobile: 2-column grid */
+@media (max-width: 700px) {
+  .outside-image.outside-bookshelf {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+  .outside-image.outside-bookshelf figure:first-child {
+    grid-row: 1 / 3;
+    grid-column: 1;
+  }
+}
+
+/* Category label chip */
+.outside-category {
+  font: 700 9.5px var(--font-jetbrains-mono), monospace;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--color-tangerine-ink);
+  background: rgba(217,119,6,.09);
+  border: 1px solid rgba(217,119,6,.2);
+  border-radius: 999px;
+  padding: 4px 12px;
+  display: inline-block;
+}
+
+/* Story copy block */
+.outside-story-copy h3 {
+  max-width: 440px;
+  font-size: clamp(30px, 3.4vw, 48px);
+  line-height: 1.12;
+  margin: 20px 0;
+  font-weight: 400;
+  letter-spacing: -.02em;
+}
+
+.outside-story-copy > p {
+  max-width: 420px;
+  color: var(--color-muted);
+  font-size: 15px;
+  line-height: 1.85;
+}
+
+.outside-story-copy .text-link {
+  margin-top: 24px;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font: 700 12px var(--font-jetbrains-mono), monospace;
+  text-transform: uppercase;
+  letter-spacing: .06em;
+  color: var(--color-tangerine-ink);
+  transition: gap 180ms;
+}
+
+.outside-story-copy .text-link:hover {
+  gap: 11px;
+}
+
+/* Preview watermark badge */
+.journey-preview {
+  display: inline-block;
+  margin-top: 20px;
+  color: var(--color-muted);
+  font: 700 9px var(--font-jetbrains-mono), monospace;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  background: var(--color-peach);
+  border: 1px dashed var(--color-line);
+  border-radius: 8px;
+  padding: 5px 12px;
+}
+
+/* Alternate story (photo on right) */
+.outside-story-1 {
+  grid-template-columns: 1fr 1.1fr;
+}
+
+.outside-story-1 .outside-photo {
+  grid-column: 2;
+  grid-row: 1;
+  transform: rotate(2deg);
+  transition: transform .4s cubic-bezier(.16,1,.3,1);
+}
+
+.outside-story:hover .outside-story-1 .outside-photo,
+.outside-story-1:hover .outside-photo {
+  transform: rotate(1deg) translateY(-4px);
+}
+
+.outside-story-1 .outside-story-copy {
+  grid-column: 1;
+  grid-row: 1;
+  padding-left: 7%;
+}
+
+/* Alternate image border radius flip */
+.outside-story-1 .outside-image {
+  border-radius: 18px 90px 18px 18px;
+}
+
+/* -----------------------------------------------------------------------
+   Capabilities List (Services)
+   ----------------------------------------------------------------------- */
+.services-section .section-heading-row h2 { max-width: 790px; }
+.services-section .section-heading-row > p { max-width: 325px; font-size: 15px; }
+
+.capabilities-list {
+  border-top: 1px solid var(--color-line);
+  margin-top: 0;
+}
+
+/* Each capability row */
+.capability {
+  display: grid;
+  grid-template-columns: 80px minmax(0, 1fr) minmax(240px, .65fr);
+  align-items: start;
+  gap: 35px;
+  padding: 48px 0;
+  border-bottom: 1px solid var(--color-line);
+  transition: all .3s ease;
+  position: relative;
+}
+
+/* Amber left-edge accent bar on hover */
+.capability::before {
+  content: "";
+  position: absolute;
+  left: -1px;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: var(--color-tangerine);
+  border-radius: 0 3px 3px 0;
+  transform: scaleY(0);
+  transform-origin: center;
+  transition: transform .3s cubic-bezier(.16,1,.3,1);
+}
+
+.capability:hover::before {
+  transform: scaleY(1);
+}
+
+/* Marker column (number + icon) */
+.capability-marker {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  color: var(--color-cocoa-soft);
+}
+
+.capability-marker > span {
+  font: 700 11px var(--font-jetbrains-mono), monospace;
+  color: var(--color-tangerine-ink);
+  letter-spacing: .04em;
+}
+
+.capability-marker svg {
+  transition: transform .4s cubic-bezier(.16,1,.3,1);
+}
+
+.capability:hover .capability-marker svg {
+  transform: rotate(12deg) scale(1.1);
+}
+
+/* Copy column */
+.capability-copy h3 {
+  font: 400 clamp(28px, 2.7vw, 39px)/1.2 var(--font-delius), sans-serif;
+  margin: 13px 0 16px;
+  color: var(--color-cocoa);
+}
+
+.capability-copy > p {
+  font-size: 14px;
+  line-height: 1.85;
+  color: var(--color-muted);
+  max-width: 530px;
+}
+
+.capability-copy > ul {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  gap: 10px;
+  margin-top: 22px;
+}
+
+.capability-copy > ul li {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font: 500 12px var(--font-jetbrains-mono), monospace;
+  color: var(--color-cocoa-soft);
+}
+
+.capability-copy > ul li svg {
+  color: var(--color-leaf-ink);
+  flex-shrink: 0;
+}
+
+.capability-copy .text-link {
+  font: 700 11.5px var(--font-jetbrains-mono), monospace;
+  text-transform: uppercase;
+  letter-spacing: .07em;
+  margin-top: 22px;
+  color: var(--color-tangerine-ink);
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  transition: gap 180ms;
+}
+
+.capability-copy .text-link:hover {
+  gap: 11px;
+}
+
+/* Tools box — the signature rotated card from original, now per-tone */
+.capability-tools {
+  align-self: center;
+  background: #ffdf82;
+  border-radius: 45px 12px 45px 12px;
+  padding: 32px 28px;
+  transform: rotate(2deg);
+  transition: transform .35s cubic-bezier(.16,1,.3,1), box-shadow .35s;
+  box-shadow: 0 8px 24px rgba(20,24,27,.08);
+}
+
+.capability:hover .capability-tools {
+  transform: rotate(1deg) translateY(-4px);
+  box-shadow: 0 16px 40px rgba(20,24,27,.1);
+}
+
+.capability-green .capability-tools {
+  background: #c6dfd0;
+  transform: rotate(-2deg);
+  border-radius: 12px 45px 12px 45px;
+}
+
+.capability:hover .capability-green .capability-tools,
+.capability-green:hover .capability-tools {
+  transform: rotate(-1deg) translateY(-4px);
+}
+
+.capability-rose .capability-tools {
+  background: #ffc0c2;
+  transform: rotate(1.5deg);
+}
+
+.capability-tools > p {
+  max-width: 210px;
+  font: 600 22px/1.25 var(--font-delius), sans-serif;
+  margin-bottom: 26px;
+  color: var(--color-cocoa);
+  letter-spacing: -.02em;
+}
+
+.capability-tools > ul {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px 12px;
+  list-style: none;
+  padding: 0;
+}
+
+.capability-tools li {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+  text-align: center;
+  font: 700 9.5px var(--font-jetbrains-mono), monospace;
+  text-transform: uppercase;
+  letter-spacing: .04em;
+  background: rgba(255,255,255,.55);
+  backdrop-filter: blur(4px);
+  border: 1px solid rgba(255,255,255,.6);
+  border-radius: 12px;
+  padding: 10px 6px;
+  transition: all 180ms;
+}
+
+.capability-tools li:hover {
+  background: rgba(255,255,255,.85);
+  transform: translateY(-2px);
+}
+
+.capability-tools img {
+  object-fit: contain;
+  width: 28px;
+  height: 28px;
+}
+
+/* Supporting services strip */
+.supporting-services {
+  padding: 36px 0;
+}
+
+.supporting-services .section-kicker {
+  display: block;
+  margin-bottom: 18px;
+  font-size: 9px;
+}
+
+.supporting-services > div {
+  display: flex;
+  gap: 10px 14px;
+  flex-wrap: wrap;
+}
+
+.supporting-services a {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font: 600 12px var(--font-jetbrains-mono), monospace;
+  text-transform: uppercase;
+  letter-spacing: .04em;
+  background: #FFFFFF;
+  border: 1px solid var(--color-line);
+  border-radius: 999px;
+  padding: 8px 16px;
+  color: var(--color-cocoa);
+  transition: all 200ms cubic-bezier(.16,1,.3,1);
+}
+
+.supporting-services a:hover {
+  background: var(--color-cocoa);
+  color: #FFFFFF;
+  border-color: var(--color-cocoa);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(20,24,27,.12);
+}
+
+/* -----------------------------------------------------------------------
+   Tablet (768px – 1000px)
+   ----------------------------------------------------------------------- */
+@media (max-width: 1000px) {
+  .outside-heading { gap: 30px; }
+  .outside-heading > p { max-width: 300px; }
+  .outside-topics .outside-side-note { display: none; }
+  .outside-story { gap: 6%; }
+  .capability { grid-template-columns: 45px minmax(0, 1fr) 240px; gap: 22px; }
+  .capability-tools { padding: 27px 23px; }
+}
+
+/* -----------------------------------------------------------------------
+   Mobile (< 700px)
+   ----------------------------------------------------------------------- */
+@media (max-width: 700px) {
+  .outside-section { padding-block: 64px; }
+  .outside-heading { display: block; }
+  .outside-heading .section-title { font-size: 42px; }
+  .outside-heading > p { margin-top: 22px; max-width: none; font-size: 14px; }
+
+  .outside-topics {
+    gap: 8px;
+    margin: 28px 0 44px;
+    padding: 14px 0;
+    flex-wrap: nowrap;
+  }
+  .outside-topics > span { font-size: 10px; gap: 5px; }
+
+  .outside-stories { gap: 55px; }
+
+  .outside-story, .outside-story-1 {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 28px;
+  }
+
+  .outside-photo {
+    margin: 0 6px;
+    transform: rotate(-1.5deg);
+  }
+
+  .outside-image {
+    aspect-ratio: 1.15;
+    border-top-left-radius: 60px;
+  }
+
+  .outside-story-1 .outside-image {
+    border-top-right-radius: 60px;
+    border-top-left-radius: 18px;
+  }
+
+  .outside-photo figcaption { font-size: 11px; gap: 12px; }
+
+  .outside-story-copy h3 { font-size: 30px; margin: 15px 0; }
+  .outside-story-copy > p { font-size: 14px; line-height: 1.8; }
+
+  .outside-story-1 .outside-photo,
+  .outside-story-1 .outside-story-copy {
+    grid-column: auto;
+    grid-row: auto;
+    padding-left: 0;
+  }
+
+  .capability {
+    grid-template-columns: 25px minmax(0, 1fr);
+    gap: 18px;
+    padding: 36px 0;
+  }
+  .capability-marker { gap: 22px; }
+  .capability-marker svg { width: 24px; height: 24px; }
+  .capability-copy h3 { font-size: 28px; }
+  .capability-tools {
+    grid-column: 2;
+    width: 100%;
+    max-width: 320px;
+    padding: 24px;
+    margin-top: 14px;
+    transform: rotate(1deg);
+  }
+  .capability-tools > p { max-width: none; font-size: 20px; }
+  .capability-tools > ul { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; }
+  .capability-tools li { font-size: 9px; padding: 8px 4px; }
+  .capability-copy .text-link { font-size: 11px; gap: 6px; }
+}

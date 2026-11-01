@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none" width="200" height="200">
+  <!-- Outer ring -->
+  <circle cx="100" cy="100" r="96" fill="#2d1a0e" />
+  <circle cx="100" cy="100" r="88" fill="none" stroke="#f5c842" stroke-width="2.5" stroke-dasharray="6 4" />
+  <!-- Icon -->
+  <text x="50%" y="88" text-anchor="middle" font-family="'Courier New', monospace" font-size="38" font-weight="700" fill="#f5c842">&lt;/&gt;</text>
+  <!-- Brand name -->
+  <text x="50%" y="118" text-anchor="middle" font-family="Georgia, serif" font-size="16" font-weight="700" fill="#ffe8d0" letter-spacing="2">TECHNIKRAFT</text>
+  <!-- Tagline arc text approximated as a line -->
+  <text x="50%" y="140" text-anchor="middle" font-family="Georgia, serif" font-size="9" fill="#f5c842" letter-spacing="3">UYO · NIGERIA · OPEN TO THE WORLD</text>
+</svg>

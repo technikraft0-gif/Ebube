@@ -1,0 +1,251 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <linearGradient id="barGold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+    <linearGradient id="barAmber" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fbbf24"/>
+      <stop offset="100%" stop-color="#f59e0b"/>
+    </linearGradient>
+    <linearGradient id="lineGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#6366f1"/>
+      <stop offset="100%" stop-color="#8b5cf6"/>
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="750" fill="url(#bg)"/>
+
+  <!-- Sidebar -->
+  <rect x="0" y="0" width="220" height="750" fill="#0f172a"/>
+  <rect x="0" y="0" width="220" height="750" fill="#1e293b" opacity="0.5"/>
+
+  <!-- Sidebar Logo -->
+  <rect x="20" y="20" width="180" height="48" rx="8" fill="#f59e0b" opacity="0.15"/>
+  <text x="40" y="50" font-family="system-ui,sans-serif" font-size="15" font-weight="700" fill="#f59e0b">Springlight</text>
+  <text x="40" y="65" font-family="system-ui,sans-serif" font-size="10" fill="#94a3b8">Commerce Manager</text>
+
+  <!-- Sidebar Nav Items -->
+  <rect x="12" y="90" width="196" height="36" rx="6" fill="#f59e0b" opacity="0.15"/>
+  <rect x="20" y="103" width="4" height="10" rx="2" fill="#f59e0b"/>
+  <text x="36" y="113" font-family="system-ui,sans-serif" font-size="13" fill="#f59e0b" font-weight="600">Dashboard</text>
+
+  
+  <rect x="20" y="140" width="4" height="10" rx="2" fill="#475569" opacity="0.6"/>
+  <text x="36" y="152" font-family="system-ui,sans-serif" font-size="13" fill="#94a3b8">Inventory</text>
+  
+  <rect x="20" y="184" width="4" height="10" rx="2" fill="#475569" opacity="0.6"/>
+  <text x="36" y="196" font-family="system-ui,sans-serif" font-size="13" fill="#94a3b8">Orders</text>
+  
+  <rect x="20" y="228" width="4" height="10" rx="2" fill="#475569" opacity="0.6"/>
+  <text x="36" y="240" font-family="system-ui,sans-serif" font-size="13" fill="#94a3b8">Customers</text>
+  
+  <rect x="20" y="272" width="4" height="10" rx="2" fill="#475569" opacity="0.6"/>
+  <text x="36" y="284" font-family="system-ui,sans-serif" font-size="13" fill="#94a3b8">Reports</text>
+  
+  <rect x="20" y="316" width="4" height="10" rx="2" fill="#475569" opacity="0.6"/>
+  <text x="36" y="328" font-family="system-ui,sans-serif" font-size="13" fill="#94a3b8">Settings</text>
+  
+
+  <!-- Sidebar bottom user -->
+  <circle cx="36" cy="706" r="16" fill="#334155"/>
+  <text x="36" y="711" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#f59e0b">EU</text>
+  <text x="58" y="703" font-family="system-ui,sans-serif" font-size="12" fill="#e2e8f0">Ebube Udorie</text>
+  <text x="58" y="718" font-family="system-ui,sans-serif" font-size="10" fill="#64748b">Admin</text>
+
+  <!-- Main content area -->
+  <!-- Top bar -->
+  <rect x="220" y="0" width="980" height="56" fill="#1e293b"/>
+  <text x="240" y="34" font-family="system-ui,sans-serif" font-size="18" font-weight="700" fill="#f1f5f9">Overview</text>
+  <text x="620" y="33" font-family="system-ui,sans-serif" font-size="12" fill="#64748b">November 2025</text>
+  <rect x="900" y="14" width="120" height="28" rx="6" fill="#f59e0b"/>
+  <text x="960" y="32" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" font-weight="600" fill="#0f172a">+ New Order</text>
+  <rect x="1040" y="14" width="36" height="28" rx="6" fill="#334155"/>
+  <text x="1058" y="32" font-family="system-ui,sans-serif" font-size="14" fill="#94a3b8">&#9776;</text>
+
+  <!-- KPI Cards -->
+  
+  <rect x="240" y="72" width="220" height="90" rx="10" fill="#1e293b" filter="url(#shadow)"/>
+  <rect x="240" y="72" width="220" height="3" rx="2" fill="#f59e0b"/>
+  <text x="256" y="102" font-family="system-ui,sans-serif" font-size="11" fill="#64748b">Total Revenue</text>
+  <text x="256" y="130" font-family="system-ui,sans-serif" font-size="20" font-weight="700" fill="#f1f5f9">₦2,847,500</text>
+  <text x="256" y="148" font-family="system-ui,sans-serif" font-size="11" fill="#22c55e">+14.2% this month</text>
+  
+  <rect x="480" y="72" width="220" height="90" rx="10" fill="#1e293b" filter="url(#shadow)"/>
+  <rect x="480" y="72" width="220" height="3" rx="2" fill="#f59e0b"/>
+  <text x="496" y="102" font-family="system-ui,sans-serif" font-size="11" fill="#64748b">Total Orders</text>
+  <text x="496" y="130" font-family="system-ui,sans-serif" font-size="20" font-weight="700" fill="#f1f5f9">1,284</text>
+  <text x="496" y="148" font-family="system-ui,sans-serif" font-size="11" fill="#22c55e">+8.7% this month</text>
+  
+  <rect x="720" y="72" width="220" height="90" rx="10" fill="#1e293b" filter="url(#shadow)"/>
+  <rect x="720" y="72" width="220" height="3" rx="2" fill="#ef4444"/>
+  <text x="736" y="102" font-family="system-ui,sans-serif" font-size="11" fill="#64748b">In Stock</text>
+  <text x="736" y="130" font-family="system-ui,sans-serif" font-size="20" font-weight="700" fill="#f1f5f9">3,942 items</text>
+  <text x="736" y="148" font-family="system-ui,sans-serif" font-size="11" fill="#ef4444">-2.1% this month</text>
+  
+  <rect x="960" y="72" width="220" height="90" rx="10" fill="#1e293b" filter="url(#shadow)"/>
+  <rect x="960" y="72" width="220" height="3" rx="2" fill="#f59e0b"/>
+  <text x="976" y="102" font-family="system-ui,sans-serif" font-size="11" fill="#64748b">Active Customers</text>
+  <text x="976" y="130" font-family="system-ui,sans-serif" font-size="20" font-weight="700" fill="#f1f5f9">847</text>
+  <text x="976" y="148" font-family="system-ui,sans-serif" font-size="11" fill="#22c55e">+22.4% this month</text>
+  
+
+  <!-- Revenue Chart -->
+  <rect x="240" y="178" width="580" height="240" rx="10" fill="#1e293b" filter="url(#shadow)"/>
+  <text x="256" y="204" font-family="system-ui,sans-serif" font-size="14" font-weight="600" fill="#e2e8f0">Monthly Revenue</text>
+  <text x="750" y="204" font-family="system-ui,sans-serif" font-size="11" fill="#64748b">Last 8 months</text>
+
+  <!-- Chart bars -->
+  
+  <rect x="280" y="308" width="44" height="80" rx="4" fill="url(#barAmber)" opacity="0.6"/>
+  
+  <rect x="340" y="278" width="44" height="110" rx="4" fill="url(#barAmber)" opacity="0.6"/>
+  
+  <rect x="400" y="323" width="44" height="65" rx="4" fill="url(#barAmber)" opacity="0.6"/>
+  
+  <rect x="460" y="248" width="44" height="140" rx="4" fill="url(#barAmber)" opacity="0.6"/>
+  
+  <rect x="520" y="288" width="44" height="100" rx="4" fill="url(#barAmber)" opacity="0.6"/>
+  
+  <rect x="580" y="228" width="44" height="160" rx="4" fill="url(#barAmber)" opacity="0.6"/>
+  
+  <rect x="640" y="268" width="44" height="120" rx="4" fill="url(#barAmber)" opacity="0.6"/>
+  
+  <rect x="700" y="218" width="44" height="170" rx="4" fill="url(#barGold)" opacity="1"/>
+  
+
+  <!-- Chart labels -->
+  
+  <text x="302" y="403" text-anchor="middle" font-family="system-ui,sans-serif" font-size="10" fill="#64748b">Apr</text>
+  
+  <text x="362" y="403" text-anchor="middle" font-family="system-ui,sans-serif" font-size="10" fill="#64748b">May</text>
+  
+  <text x="422" y="403" text-anchor="middle" font-family="system-ui,sans-serif" font-size="10" fill="#64748b">Jun</text>
+  
+  <text x="482" y="403" text-anchor="middle" font-family="system-ui,sans-serif" font-size="10" fill="#64748b">Jul</text>
+  
+  <text x="542" y="403" text-anchor="middle" font-family="system-ui,sans-serif" font-size="10" fill="#64748b">Aug</text>
+  
+  <text x="602" y="403" text-anchor="middle" font-family="system-ui,sans-serif" font-size="10" fill="#64748b">Sep</text>
+  
+  <text x="662" y="403" text-anchor="middle" font-family="system-ui,sans-serif" font-size="10" fill="#64748b">Oct</text>
+  
+  <text x="722" y="403" text-anchor="middle" font-family="system-ui,sans-serif" font-size="10" fill="#64748b">Nov</text>
+  
+
+  <!-- Grid lines -->
+  
+  <line x1="260" y1="248" x2="780" y2="248" stroke="#334155" stroke-width="1"/>
+  
+  <line x1="260" y1="288" x2="780" y2="288" stroke="#334155" stroke-width="1"/>
+  
+  <line x1="260" y1="328" x2="780" y2="328" stroke="#334155" stroke-width="1"/>
+  
+  <line x1="260" y1="368" x2="780" y2="368" stroke="#334155" stroke-width="1"/>
+  
+
+  <!-- Inventory Panel -->
+  <rect x="836" y="178" width="344" height="240" rx="10" fill="#1e293b" filter="url(#shadow)"/>
+  <text x="852" y="204" font-family="system-ui,sans-serif" font-size="14" font-weight="600" fill="#e2e8f0">Top Products</text>
+
+  
+  <rect x="852" y="218" width="312" height="40" rx="6" fill="#0f172a" opacity="0.5"/>
+  <text x="868" y="241" font-family="system-ui,sans-serif" font-size="12" fill="#e2e8f0">Premium Headphones</text>
+  <text x="868" y="254" font-family="system-ui,sans-serif" font-size="10" fill="#64748b">284 units</text>
+  <rect x="1090" y="222" width="60" height="18" rx="9" fill="#166534"/>
+  <text x="1120" y="234" text-anchor="middle" font-family="system-ui,sans-serif" font-size="9" fill="#86efac">In Stock</text>
+  
+  <rect x="852" y="264" width="312" height="40" rx="6" fill="transparent" opacity="0.5"/>
+  <text x="868" y="287" font-family="system-ui,sans-serif" font-size="12" fill="#e2e8f0">USB-C Hub Pro</text>
+  <text x="868" y="300" font-family="system-ui,sans-serif" font-size="10" fill="#64748b">147 units</text>
+  <rect x="1090" y="268" width="60" height="18" rx="9" fill="#7f1d1d"/>
+  <text x="1120" y="280" text-anchor="middle" font-family="system-ui,sans-serif" font-size="9" fill="#fca5a5">Low Stock</text>
+  
+  <rect x="852" y="310" width="312" height="40" rx="6" fill="#0f172a" opacity="0.5"/>
+  <text x="868" y="333" font-family="system-ui,sans-serif" font-size="12" fill="#e2e8f0">Wireless Keyboard</text>
+  <text x="868" y="346" font-family="system-ui,sans-serif" font-size="10" fill="#64748b">389 units</text>
+  <rect x="1090" y="314" width="60" height="18" rx="9" fill="#166534"/>
+  <text x="1120" y="326" text-anchor="middle" font-family="system-ui,sans-serif" font-size="9" fill="#86efac">In Stock</text>
+  
+  <rect x="852" y="356" width="312" height="40" rx="6" fill="transparent" opacity="0.5"/>
+  <text x="868" y="379" font-family="system-ui,sans-serif" font-size="12" fill="#e2e8f0">Gaming Mouse RGB</text>
+  <text x="868" y="392" font-family="system-ui,sans-serif" font-size="10" fill="#64748b">62 units</text>
+  <rect x="1090" y="360" width="60" height="18" rx="9" fill="#7f1d1d"/>
+  <text x="1120" y="372" text-anchor="middle" font-family="system-ui,sans-serif" font-size="9" fill="#fca5a5">Low Stock</text>
+  
+
+  <!-- Orders Table -->
+  <rect x="240" y="432" width="940" height="280" rx="10" fill="#1e293b" filter="url(#shadow)"/>
+  <text x="256" y="460" font-family="system-ui,sans-serif" font-size="14" font-weight="600" fill="#e2e8f0">Recent Orders</text>
+
+  <!-- Table Header -->
+  <rect x="240" y="470" width="940" height="32" fill="#0f172a" rx="4"/>
+  
+  <text x="270" y="491" font-family="system-ui,sans-serif" font-size="11" fill="#64748b" font-weight="600">Order ID</text>
+  
+  <text x="426" y="491" font-family="system-ui,sans-serif" font-size="11" fill="#64748b" font-weight="600">Customer</text>
+  
+  <text x="582" y="491" font-family="system-ui,sans-serif" font-size="11" fill="#64748b" font-weight="600">Product</text>
+  
+  <text x="738" y="491" font-family="system-ui,sans-serif" font-size="11" fill="#64748b" font-weight="600">Date</text>
+  
+  <text x="894" y="491" font-family="system-ui,sans-serif" font-size="11" fill="#64748b" font-weight="600">Amount</text>
+  
+  <text x="1050" y="491" font-family="system-ui,sans-serif" font-size="11" fill="#64748b" font-weight="600">Status</text>
+  
+
+  
+  <rect x="240" y="502" width="940" height="38" fill="#0f172a" opacity="0.3"/>
+  <text x="270" y="526" font-family="system-ui,sans-serif" font-size="12" fill="#94a3b8">#ORD-2841</text>
+  <text x="426" y="526" font-family="system-ui,sans-serif" font-size="12" fill="#e2e8f0">Amaka Obi</text>
+  <text x="582" y="526" font-family="system-ui,sans-serif" font-size="12" fill="#94a3b8">USB-C Hub Pro</text>
+  <text x="738" y="526" font-family="system-ui,sans-serif" font-size="12" fill="#64748b">Nov 12</text>
+  <text x="894" y="526" font-family="system-ui,sans-serif" font-size="12" fill="#f1f5f9" font-weight="600">₦9,000</text>
+  <rect x="1040" y="512" width="62" height="18" rx="9" fill="#166534"/>
+  <text x="1071" y="525" text-anchor="middle" font-family="system-ui,sans-serif" font-size="9" fill="#86efac">Paid</text>
+  
+  <rect x="240" y="540" width="940" height="38" fill="transparent" opacity="0.3"/>
+  <text x="270" y="564" font-family="system-ui,sans-serif" font-size="12" fill="#94a3b8">#ORD-2840</text>
+  <text x="426" y="564" font-family="system-ui,sans-serif" font-size="12" fill="#e2e8f0">Chidi Nwosu</text>
+  <text x="582" y="564" font-family="system-ui,sans-serif" font-size="12" fill="#94a3b8">Gaming Mouse RGB</text>
+  <text x="738" y="564" font-family="system-ui,sans-serif" font-size="12" fill="#64748b">Nov 12</text>
+  <text x="894" y="564" font-family="system-ui,sans-serif" font-size="12" fill="#f1f5f9" font-weight="600">₦3,000</text>
+  <rect x="1040" y="550" width="62" height="18" rx="9" fill="#713f12"/>
+  <text x="1071" y="563" text-anchor="middle" font-family="system-ui,sans-serif" font-size="9" fill="#fde68a">Pending</text>
+  
+  <rect x="240" y="578" width="940" height="38" fill="#0f172a" opacity="0.3"/>
+  <text x="270" y="602" font-family="system-ui,sans-serif" font-size="12" fill="#94a3b8">#ORD-2839</text>
+  <text x="426" y="602" font-family="system-ui,sans-serif" font-size="12" fill="#e2e8f0">Fatima Bello</text>
+  <text x="582" y="602" font-family="system-ui,sans-serif" font-size="12" fill="#94a3b8">Headphones Pro</text>
+  <text x="738" y="602" font-family="system-ui,sans-serif" font-size="12" fill="#64748b">Nov 11</text>
+  <text x="894" y="602" font-family="system-ui,sans-serif" font-size="12" fill="#f1f5f9" font-weight="600">₦15,000</text>
+  <rect x="1040" y="588" width="62" height="18" rx="9" fill="#166534"/>
+  <text x="1071" y="601" text-anchor="middle" font-family="system-ui,sans-serif" font-size="9" fill="#86efac">Paid</text>
+  
+  <rect x="240" y="616" width="940" height="38" fill="transparent" opacity="0.3"/>
+  <text x="270" y="640" font-family="system-ui,sans-serif" font-size="12" fill="#94a3b8">#ORD-2838</text>
+  <text x="426" y="640" font-family="system-ui,sans-serif" font-size="12" fill="#e2e8f0">Emeka Eze</text>
+  <text x="582" y="640" font-family="system-ui,sans-serif" font-size="12" fill="#94a3b8">Wireless Keyboard</text>
+  <text x="738" y="640" font-family="system-ui,sans-serif" font-size="12" fill="#64748b">Nov 11</text>
+  <text x="894" y="640" font-family="system-ui,sans-serif" font-size="12" fill="#f1f5f9" font-weight="600">₦8,000</text>
+  <rect x="1040" y="626" width="62" height="18" rx="9" fill="#1e3a5f"/>
+  <text x="1071" y="639" text-anchor="middle" font-family="system-ui,sans-serif" font-size="9" fill="#93c5fd">Shipped</text>
+  
+  <rect x="240" y="654" width="940" height="38" fill="#0f172a" opacity="0.3"/>
+  <text x="270" y="678" font-family="system-ui,sans-serif" font-size="12" fill="#94a3b8">#ORD-2837</text>
+  <text x="426" y="678" font-family="system-ui,sans-serif" font-size="12" fill="#e2e8f0">Ngozi Adaeze</text>
+  <text x="582" y="678" font-family="system-ui,sans-serif" font-size="12" fill="#94a3b8">USB-C Hub Pro</text>
+  <text x="738" y="678" font-family="system-ui,sans-serif" font-size="12" fill="#64748b">Nov 10</text>
+  <text x="894" y="678" font-family="system-ui,sans-serif" font-size="12" fill="#f1f5f9" font-weight="600">₦9,000</text>
+  <rect x="1040" y="664" width="62" height="18" rx="9" fill="#166534"/>
+  <text x="1071" y="677" text-anchor="middle" font-family="system-ui,sans-serif" font-size="9" fill="#86efac">Paid</text>
+  
+</svg>

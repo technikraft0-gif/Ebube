@@ -1,0 +1,213 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750">
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1e1e2e"/>
+      <stop offset="100%" stop-color="#181825"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="750" fill="url(#bg2)"/>
+
+  <!-- Title bar -->
+  <rect x="0" y="0" width="1200" height="32" fill="#11111b"/>
+  <circle cx="20" cy="16" r="6" fill="#ff5f57"/>
+  <circle cx="40" cy="16" r="6" fill="#ffbd2e"/>
+  <circle cx="60" cy="16" r="6" fill="#28c840"/>
+  <text x="600" y="21" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" fill="#6c7086">Web IDE — workspace</text>
+
+  <!-- Tab bar -->
+  <rect x="0" y="32" width="1200" height="36" fill="#1e1e2e"/>
+  <rect x="220" y="32" width="160" height="36" fill="#1e1e2e" stroke="#cba6f7" stroke-width="0" rx="0"/>
+  <rect x="220" y="32" width="160" height="3" fill="#cba6f7"/>
+  <text x="230" y="54" font-family="monospace,sans-serif" font-size="12" fill="#cdd6f4">index.tsx</text>
+  <rect x="380" y="32" width="150" height="36" fill="#11111b"/>
+  <text x="390" y="54" font-family="monospace,sans-serif" font-size="12" fill="#6c7086">api/users.ts</text>
+  <rect x="530" y="32" width="140" height="36" fill="#11111b"/>
+  <text x="540" y="54" font-family="monospace,sans-serif" font-size="12" fill="#6c7086">schema.sql</text>
+  <rect x="670" y="32" width="120" height="36" fill="#11111b"/>
+  <text x="680" y="54" font-family="monospace,sans-serif" font-size="12" fill="#6c7086">README.md</text>
+
+  <!-- Activity bar -->
+  <rect x="0" y="32" width="48" height="718" fill="#11111b"/>
+  
+  <text x="24" y="90" text-anchor="middle" font-family="system-ui,sans-serif" font-size="18" fill="#cba6f7">&#9679;</text>
+  
+  <text x="24" y="146" text-anchor="middle" font-family="system-ui,sans-serif" font-size="18" fill="#45475a">&#9650;</text>
+  
+  <text x="24" y="202" text-anchor="middle" font-family="system-ui,sans-serif" font-size="18" fill="#45475a">&#10685;</text>
+  
+  <text x="24" y="258" text-anchor="middle" font-family="system-ui,sans-serif" font-size="18" fill="#45475a">&#9881;</text>
+  
+  <text x="24" y="314" text-anchor="middle" font-family="system-ui,sans-serif" font-size="18" fill="#45475a">&#10064;</text>
+  
+
+  <!-- File tree sidebar -->
+  <rect x="48" y="68" width="172" height="682" fill="#181825"/>
+  <text x="60" y="90" font-family="monospace,sans-serif" font-size="11" fill="#6c7086" font-weight="700">EXPLORER</text>
+
+  
+  
+  <text x="64" y="121" font-family="monospace,sans-serif" font-size="11" fill="#89b4fa">▾ src</text>
+  
+  
+  <text x="76" y="143" font-family="monospace,sans-serif" font-size="11" fill="#89b4fa">▾ components</text>
+  
+  
+  <text x="88" y="165" font-family="monospace,sans-serif" font-size="11" fill="#cdd6f4">  Button.tsx</text>
+  
+  
+  <text x="88" y="187" font-family="monospace,sans-serif" font-size="11" fill="#cdd6f4">  Modal.tsx</text>
+  
+  
+  <text x="76" y="209" font-family="monospace,sans-serif" font-size="11" fill="#89b4fa">▾ pages</text>
+  
+  <rect x="48" y="215" width="172" height="22" fill="#cba6f7" opacity="0.15"/>
+  <text x="88" y="231" font-family="monospace,sans-serif" font-size="11" fill="#cba6f7">  index.tsx</text>
+  
+  
+  <text x="76" y="253" font-family="monospace,sans-serif" font-size="11" fill="#89b4fa">▾ api</text>
+  
+  
+  <text x="88" y="275" font-family="monospace,sans-serif" font-size="11" fill="#cdd6f4">  users.ts</text>
+  
+  
+  <text x="64" y="297" font-family="monospace,sans-serif" font-size="11" fill="#89b4fa">▾ public</text>
+  
+  
+  <text x="64" y="319" font-family="monospace,sans-serif" font-size="11" fill="#cdd6f4">  package.json</text>
+  
+  
+  <text x="64" y="341" font-family="monospace,sans-serif" font-size="11" fill="#cdd6f4">  tsconfig.json</text>
+  
+  
+  <text x="64" y="363" font-family="monospace,sans-serif" font-size="11" fill="#cdd6f4">  .env.local</text>
+  
+
+  <!-- Code editor main area -->
+  <rect x="220" y="68" width="720" height="490" fill="#1e1e2e"/>
+
+  <!-- Line numbers -->
+  <rect x="220" y="68" width="40" height="490" fill="#181825"/>
+
+  <!-- Code lines -->
+  
+  <text x="228" y="108" font-family="monospace,sans-serif" font-size="10" fill="#45475a">1</text>
+  <text x="268" y="108" font-family="monospace,sans-serif" font-size="11" fill="#cdd6f4">import React, { useState, useEffect } from 'react'</text>
+  
+  <text x="228" y="128" font-family="monospace,sans-serif" font-size="10" fill="#45475a">2</text>
+  <text x="268" y="128" font-family="monospace,sans-serif" font-size="11" fill="#cdd6f4">import { Editor } from '@monaco-editor/react'</text>
+  
+  <text x="228" y="148" font-family="monospace,sans-serif" font-size="10" fill="#45475a">3</text>
+  <text x="268" y="148" font-family="monospace,sans-serif" font-size="11" fill="#cdd6f4">import { FileTree } from '@/components/FileTree'</text>
+  
+  <text x="228" y="168" font-family="monospace,sans-serif" font-size="10" fill="#45475a">4</text>
+  <text x="268" y="168" font-family="monospace,sans-serif" font-size="11" fill="#cdd6f4"></text>
+  
+  <text x="228" y="188" font-family="monospace,sans-serif" font-size="10" fill="#45475a">5</text>
+  <text x="268" y="188" font-family="monospace,sans-serif" font-size="11" fill="#89dceb">interface EditorProps {</text>
+  
+  <text x="228" y="208" font-family="monospace,sans-serif" font-size="10" fill="#45475a">6</text>
+  <text x="268" y="208" font-family="monospace,sans-serif" font-size="11" fill="#cdd6f4">  projectId: string</text>
+  
+  <text x="228" y="228" font-family="monospace,sans-serif" font-size="10" fill="#45475a">7</text>
+  <text x="268" y="228" font-family="monospace,sans-serif" font-size="11" fill="#cdd6f4">  language: 'typescript' | 'python' | 'sql'</text>
+  
+  <text x="228" y="248" font-family="monospace,sans-serif" font-size="10" fill="#45475a">8</text>
+  <text x="268" y="248" font-family="monospace,sans-serif" font-size="11" fill="#cdd6f4">  onSave?: (code: string) =&gt; void</text>
+  
+  <text x="228" y="268" font-family="monospace,sans-serif" font-size="10" fill="#45475a">9</text>
+  <text x="268" y="268" font-family="monospace,sans-serif" font-size="11" fill="#89dceb">}</text>
+  
+  <text x="228" y="288" font-family="monospace,sans-serif" font-size="10" fill="#45475a">10</text>
+  <text x="268" y="288" font-family="monospace,sans-serif" font-size="11" fill="#cdd6f4"></text>
+  
+  <text x="228" y="308" font-family="monospace,sans-serif" font-size="10" fill="#45475a">11</text>
+  <text x="268" y="308" font-family="monospace,sans-serif" font-size="11" fill="#cba6f7">export default function WebIDE({ projectId }: EditorProps) {</text>
+  
+  <text x="228" y="328" font-family="monospace,sans-serif" font-size="10" fill="#45475a">12</text>
+  <text x="268" y="328" font-family="monospace,sans-serif" font-size="11" fill="#cdd6f4">  const [files, setFiles] = useState&lt;string[]&gt;([])</text>
+  
+  <text x="228" y="348" font-family="monospace,sans-serif" font-size="10" fill="#45475a">13</text>
+  <text x="268" y="348" font-family="monospace,sans-serif" font-size="11" fill="#cdd6f4">  const [activeFile, setActiveFile] = useState('')</text>
+  
+  <text x="228" y="368" font-family="monospace,sans-serif" font-size="10" fill="#45475a">14</text>
+  <text x="268" y="368" font-family="monospace,sans-serif" font-size="11" fill="#cdd6f4">  const [content, setContent] = useState('')</text>
+  
+  <text x="228" y="388" font-family="monospace,sans-serif" font-size="10" fill="#45475a">15</text>
+  <text x="268" y="388" font-family="monospace,sans-serif" font-size="11" fill="#cdd6f4"></text>
+  
+  <text x="228" y="408" font-family="monospace,sans-serif" font-size="10" fill="#45475a">16</text>
+  <text x="268" y="408" font-family="monospace,sans-serif" font-size="11" fill="#cba6f7">  useEffect(() =&gt; {</text>
+  
+  <text x="228" y="428" font-family="monospace,sans-serif" font-size="10" fill="#45475a">17</text>
+  <text x="268" y="428" font-family="monospace,sans-serif" font-size="11" fill="#cdd6f4">    fetch(`/api/files?project=${projectId}`)</text>
+  
+  <text x="228" y="448" font-family="monospace,sans-serif" font-size="10" fill="#45475a">18</text>
+  <text x="268" y="448" font-family="monospace,sans-serif" font-size="11" fill="#a6e3a1">      .then(res =&gt; res.json())</text>
+  
+  <text x="228" y="468" font-family="monospace,sans-serif" font-size="10" fill="#45475a">19</text>
+  <text x="268" y="468" font-family="monospace,sans-serif" font-size="11" fill="#a6e3a1">      .then(data =&gt; setFiles(data.files))</text>
+  
+  <text x="228" y="488" font-family="monospace,sans-serif" font-size="10" fill="#45475a">20</text>
+  <text x="268" y="488" font-family="monospace,sans-serif" font-size="11" fill="#cba6f7">  }, [projectId])</text>
+  
+  <text x="228" y="508" font-family="monospace,sans-serif" font-size="10" fill="#45475a">21</text>
+  <text x="268" y="508" font-family="monospace,sans-serif" font-size="11" fill="#cdd6f4"></text>
+  
+  <text x="228" y="528" font-family="monospace,sans-serif" font-size="10" fill="#45475a">22</text>
+  <text x="268" y="528" font-family="monospace,sans-serif" font-size="11" fill="#cba6f7">  const handleSave = async () =&gt; {</text>
+  
+
+  <!-- Active line highlight -->
+  <rect x="260" y="282" width="680" height="20" fill="#cba6f7" opacity="0.08"/>
+
+  <!-- Cursor -->
+  <rect x="570" y="284" width="2" height="16" fill="#f5c2e7" opacity="0.9"/>
+
+  <!-- Right panel - terminal & output -->
+  <rect x="940" y="68" width="260" height="490" fill="#11111b"/>
+  <text x="952" y="90" font-family="monospace,sans-serif" font-size="11" fill="#6c7086">OUTLINE</text>
+  
+  <text x="968" y="110" font-family="monospace,sans-serif" font-size="11" fill="#89dceb">EditorProps</text>
+  
+  <text x="980" y="132" font-family="monospace,sans-serif" font-size="11" fill="#89b4fa">projectId</text>
+  
+  <text x="980" y="154" font-family="monospace,sans-serif" font-size="11" fill="#89b4fa">language</text>
+  
+  <text x="980" y="176" font-family="monospace,sans-serif" font-size="11" fill="#89b4fa">onSave</text>
+  
+  <text x="968" y="198" font-family="monospace,sans-serif" font-size="11" fill="#cba6f7">WebIDE (func)</text>
+  
+  <text x="980" y="220" font-family="monospace,sans-serif" font-size="11" fill="#89b4fa">files</text>
+  
+  <text x="980" y="242" font-family="monospace,sans-serif" font-size="11" fill="#89b4fa">activeFile</text>
+  
+  <text x="980" y="264" font-family="monospace,sans-serif" font-size="11" fill="#89b4fa">content</text>
+  
+  <text x="980" y="286" font-family="monospace,sans-serif" font-size="11" fill="#89b4fa">handleSave</text>
+  
+  <text x="980" y="308" font-family="monospace,sans-serif" font-size="11" fill="#89b4fa">handleRun</text>
+  
+
+  <!-- Terminal panel at bottom -->
+  <rect x="220" y="558" width="980" height="192" fill="#11111b"/>
+  <rect x="220" y="558" width="980" height="28" fill="#181825"/>
+  <text x="232" y="576" font-family="monospace,sans-serif" font-size="11" fill="#cba6f7">TERMINAL</text>
+  <text x="310" y="576" font-family="monospace,sans-serif" font-size="11" fill="#45475a">PROBLEMS</text>
+  <text x="390" y="576" font-family="monospace,sans-serif" font-size="11" fill="#45475a">OUTPUT</text>
+
+  <text x="232" y="600" font-family="monospace,sans-serif" font-size="11" fill="#6c7086">~/projects/web-ide</text>
+  <text x="232" y="620" font-family="monospace,sans-serif" font-size="11" fill="#a6e3a1">$ npm run dev</text>
+  <text x="232" y="640" font-family="monospace,sans-serif" font-size="11" fill="#89b4fa">  ▲ Next.js 15.1.0</text>
+  <text x="232" y="660" font-family="monospace,sans-serif" font-size="11" fill="#cdd6f4">  - Local:  http://localhost:3001</text>
+  <text x="232" y="680" font-family="monospace,sans-serif" font-size="11" fill="#cdd6f4">  - Network: http://192.168.1.5:3001</text>
+  <text x="232" y="700" font-family="monospace,sans-serif" font-size="11" fill="#a6e3a1">  ✓ Ready in 2.4s</text>
+  <text x="232" y="726" font-family="monospace,sans-serif" font-size="11" fill="#f5c2e7">$ </text>
+  <rect x="248" y="714" width="2" height="15" fill="#f5c2e7" opacity="0.8"/>
+
+  <!-- Status bar -->
+  <rect x="0" y="718" width="1200" height="32" fill="#cba6f7"/>
+  <text x="56" y="738" font-family="monospace,sans-serif" font-size="11" fill="#1e1e2e">&#10003; TypeScript</text>
+  <text x="180" y="738" font-family="monospace,sans-serif" font-size="11" fill="#1e1e2e">Ln 22, Col 34</text>
+  <text x="1000" y="738" font-family="monospace,sans-serif" font-size="11" fill="#1e1e2e">UTF-8  LF  TypeScript  Web IDE</text>
+</svg>

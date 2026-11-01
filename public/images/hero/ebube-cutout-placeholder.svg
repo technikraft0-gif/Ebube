@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 900" fill="none" width="600" height="900">
+  <rect width="600" height="900" fill="none"/>
+  <!-- Silhouette shape -->
+  <ellipse cx="300" cy="220" rx="110" ry="120" fill="#2d1a0e" opacity="0.15"/>
+  <rect x="170" y="320" width="260" height="360" rx="40" fill="#2d1a0e" opacity="0.12"/>
+  <!-- Code decorations -->
+  <text x="30" y="500" font-family="'Courier New', monospace" font-size="13" fill="#f5c842" opacity="0.45">const ebube = {</text>
+  <text x="30" y="522" font-family="'Courier New', monospace" font-size="13" fill="#ffe8d0" opacity="0.35">  role: 'Engineer',</text>
+  <text x="30" y="544" font-family="'Courier New', monospace" font-size="13" fill="#5a9e6f" opacity="0.35">  builds: 'everything'</text>
+  <text x="30" y="566" font-family="'Courier New', monospace" font-size="13" fill="#f5c842" opacity="0.45">}</text>
+  <!-- Name -->
+  <text x="300" y="760" text-anchor="middle" font-family="Georgia, serif" font-size="22" fill="#2d1a0e" opacity="0.35" letter-spacing="3">EBUBE UDORIE</text>
+  <text x="300" y="790" text-anchor="middle" font-family="Georgia, serif" font-size="13" fill="#f5c842" opacity="0.5" letter-spacing="5">TECHNIKRAFT</text>
+</svg>

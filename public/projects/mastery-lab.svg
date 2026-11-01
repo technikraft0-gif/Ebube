@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750">
+  <defs>
+    <linearGradient id="mlBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0F172A"/>
+      <stop offset="100%" stop-color="#1E1E2E"/>
+    </linearGradient>
+    <linearGradient id="mlEmerald" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#10B981"/>
+      <stop offset="100%" stop-color="#06B6D4"/>
+    </linearGradient>
+    <linearGradient id="mlOrange" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F97316"/>
+      <stop offset="100%" stop-color="#EF4444"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="750" fill="url(#mlBg)"/>
+
+  <!-- Top App Navigation -->
+  <rect x="0" y="0" width="1200" height="70" fill="#0B0F19" stroke="#1E293B" stroke-width="1"/>
+  <rect x="36" y="16" width="38" height="38" rx="8" fill="url(#mlEmerald)"/>
+  <text x="46" y="41" font-family="monospace" font-size="20" font-weight="900" fill="#FFF">&lt;/&gt;</text>
+  <text x="86" y="41" font-family="system-ui,sans-serif" font-size="18" font-weight="800" fill="#F8FAFC">Mastery Lab</text>
+  <text x="210" y="41" font-family="system-ui,sans-serif" font-size="12" font-weight="600" fill="#10B981">LEARN HTML &amp; CSS FOR FREE</text>
+
+  <rect x="880" y="18" width="120" height="34" rx="17" fill="#1E293B"/>
+  <text x="906" y="39" font-family="system-ui,sans-serif" font-size="12" font-weight="600" fill="#F59E0B">⚡ 480 XP</text>
+
+  <rect x="1020" y="18" width="140" height="34" rx="17" fill="url(#mlEmerald)"/>
+  <text x="1050" y="39" font-family="system-ui,sans-serif" font-size="12" font-weight="700" fill="#000">Leaderboard 🏆</text>
+
+  <!-- Main Split Layout -->
+  <!-- Left Side: Interactive Code Editor -->
+  <rect x="36" y="100" width="680" height="600" rx="14" fill="#090D16" stroke="#1E293B" stroke-width="1.5"/>
+  <rect x="36" y="100" width="680" height="42" rx="14" fill="#131B2E"/>
+  <circle cx="58" cy="121" r="6" fill="#EF4444"/>
+  <circle cx="76" cy="121" r="6" fill="#F59E0B"/>
+  <circle cx="94" cy="121" r="6" fill="#10B981"/>
+  <text x="120" y="126" font-family="monospace" font-size="12" fill="#94A3B8">index.html — Lesson 04: CSS Flexbox Mastery</text>
+
+  <!-- Code area -->
+  <text x="60" y="175" font-family="monospace" font-size="14" fill="#F97316">&lt;div <tspan fill="#38BDF8">class=</tspan><tspan fill="#A3E635">"hero-container"</tspan>&gt;</text>
+  <text x="80" y="205" font-family="monospace" font-size="14" fill="#F97316">&lt;h1 <tspan fill="#38BDF8">class=</tspan><tspan fill="#A3E635">"headline"</tspan>&gt;<tspan fill="#FFF">Build without limits.</tspan>&lt;/h1&gt;</text>
+  <text x="80" y="235" font-family="monospace" font-size="14" fill="#F97316">&lt;p <tspan fill="#38BDF8">class=</tspan><tspan fill="#A3E635">"subtext"</tspan>&gt;<tspan fill="#FFF">Free, interactive developer academy.</tspan>&lt;/p&gt;</text>
+  <text x="80" y="265" font-family="monospace" font-size="14" fill="#F97316">&lt;button <tspan fill="#38BDF8">class=</tspan><tspan fill="#A3E635">"btn-cta"</tspan>&gt;<tspan fill="#FFF">Start Coding</tspan>&lt;/button&gt;</text>
+  <text x="60" y="295" font-family="monospace" font-size="14" fill="#F97316">&lt;/div&gt;</text>
+
+  <!-- Live Output Preview -->
+  <rect x="60" y="340" width="630" height="240" rx="10" fill="#0B132B" stroke="#10B981" stroke-width="1"/>
+  <text x="80" y="370" font-family="system-ui,sans-serif" font-size="11" font-weight="700" fill="#10B981">LIVE BROWSER PREVIEW</text>
+  <text x="80" y="420" font-family="system-ui,sans-serif" font-size="28" font-weight="800" fill="#FFF">Build without limits.</text>
+  <text x="80" y="450" font-family="system-ui,sans-serif" font-size="14" fill="#94A3B8">Free, interactive developer academy with immediate feedback.</text>
+  <rect x="80" y="480" width="140" height="40" rx="8" fill="url(#mlEmerald)"/>
+  <text x="115" y="505" font-family="system-ui,sans-serif" font-size="13" font-weight="700" fill="#000">Start Coding</text>
+
+  <!-- Code Action Bar -->
+  <rect x="36" y="640" width="680" height="60" rx="0" fill="#131B2E"/>
+  <text x="60" y="675" font-family="system-ui,sans-serif" font-size="12" fill="#34D399">✓ Test passed: display: flex &amp; justify-content: center</text>
+  <rect x="550" y="652" width="140" height="36" rx="8" fill="#10B981"/>
+  <text x="585" y="675" font-family="system-ui,sans-serif" font-size="13" font-weight="700" fill="#000">Next Lesson →</text>
+
+  <!-- Right Side: Quiz & Leaderboard Bento -->
+  <!-- Quiz Card -->
+  <rect x="740" y="100" width="420" height="280" rx="14" fill="#090D16" stroke="#1E293B" stroke-width="1.5"/>
+  <text x="764" y="135" font-family="system-ui,sans-serif" font-size="15" font-weight="700" fill="#F8FAFC">Interactive Quiz #4</text>
+  <text x="764" y="160" font-family="system-ui,sans-serif" font-size="13" fill="#94A3B8">What property aligns items along the cross axis in CSS Flexbox?</text>
+
+  <rect x="764" y="185" width="372" height="38" rx="8" fill="#151E2E"/>
+  <text x="780" y="209" font-family="monospace" font-size="12" fill="#94A3B8">A) justify-content</text>
+
+  <rect x="764" y="235" width="372" height="38" rx="8" fill="#10B981" opacity="0.15" stroke="#10B981" stroke-width="1"/>
+  <text x="780" y="259" font-family="monospace" font-size="12" font-weight="700" fill="#10B981">B) align-items  ✓ (Correct!)</text>
+
+  <rect x="764" y="285" width="372" height="38" rx="8" fill="#151E2E"/>
+  <text x="780" y="309" font-family="monospace" font-size="12" fill="#94A3B8">C) flex-direction</text>
+
+  <!-- Leaderboard Card -->
+  <rect x="740" y="405" width="420" height="295" rx="14" fill="#090D16" stroke="#1E293B" stroke-width="1.5"/>
+  <text x="764" y="440" font-family="system-ui,sans-serif" font-size="15" font-weight="700" fill="#F8FAFC">Global Weekly Leaderboard 🥇</text>
+  
+  <rect x="764" y="465" width="372" height="48" rx="8" fill="#151E2E"/>
+  <text x="784" y="494" font-family="system-ui,sans-serif" font-size="14" font-weight="700" fill="#F59E0B">1</text>
+  <text x="814" y="494" font-family="system-ui,sans-serif" font-size="13" font-weight="600" fill="#FFF">Ebube Udorie</text>
+  <text x="1040" y="494" font-family="system-ui,sans-serif" font-size="13" font-weight="700" fill="#10B981">1,450 XP</text>
+
+  <rect x="764" y="525" width="372" height="48" rx="8" fill="#111827"/>
+  <text x="784" y="554" font-family="system-ui,sans-serif" font-size="14" font-weight="700" fill="#94A3B8">2</text>
+  <text x="814" y="554" font-family="system-ui,sans-serif" font-size="13" fill="#E2E8F0">Amara C.</text>
+  <text x="1040" y="554" font-family="system-ui,sans-serif" font-size="13" font-weight="700" fill="#10B981">1,280 XP</text>
+
+  <rect x="764" y="585" width="372" height="48" rx="8" fill="#111827"/>
+  <text x="784" y="614" font-family="system-ui,sans-serif" font-size="14" font-weight="700" fill="#B45309">3</text>
+  <text x="814" y="614" font-family="system-ui,sans-serif" font-size="13" fill="#E2E8F0">Tobi F.</text>
+  <text x="1040" y="614" font-family="system-ui,sans-serif" font-size="13" font-weight="700" fill="#10B981">1,120 XP</text>
+</svg>
