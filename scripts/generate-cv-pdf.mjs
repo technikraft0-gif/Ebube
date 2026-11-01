@@ -43,7 +43,7 @@ function createPdf() {
   curY -= 15
 
   // Contacts
-  const contacts = "Email: emmanuelchibuikeudorie@gmail.com  |  Phone: +234 816 702 5308  |  GitHub: Technikraft  |  X: @technikraft"
+  const contacts = "Email: emmanuelchibuikeudorie@gmail.com  |  Phone: +234 816 702 5308  |  GitHub: technikraft0-gif  |  X: @technikraft"
   drawText(contacts, left, curY, 8.2, "/F1", [0.28, 0.35, 0.45])
   curY -= 10
 

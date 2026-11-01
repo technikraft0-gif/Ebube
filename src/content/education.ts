@@ -30,7 +30,7 @@ export const education: Education[] = [
 ]
 
 export const courses = [
-  { name: "Full-Stack Web Development & Modern Architecture", platform: "Tech Academy", instructor: "Lead Instructor", year: "2025", url: "https://github.com" },
+  { name: "Full-Stack Web Development & Modern Architecture", platform: "Tech Academy", instructor: "Lead Instructor", year: "2025", url: "https://github.com/technikraft0-gif" },
   { name: "Next.js & React Full Mastery", platform: "Self-Guided & YouTube", instructor: "Engineering Community", year: "2024", url: "https://nextjs.org" },
   { name: "TypeScript & Scalable Backend Systems", platform: "Online Engineering Course", instructor: "Industry Mentors", year: "2024", url: "https://typescriptlang.org" },
 ]

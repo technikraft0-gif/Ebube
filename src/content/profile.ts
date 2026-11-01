@@ -29,7 +29,7 @@ export const profile = {
   ],
   interests: ["Interactive learning systems & EdTech", "AI-assisted academic tools", "Mobile app development with Flutter", "E-commerce & payment gateways", "Low-level & systems engineering with C++"],
   links: {
-    github: "https://github.com",
+    github: "https://github.com/technikraft0-gif",
     x: "https://x.com",
     xHandle: "@technikraft",
     tiktok: "https://tiktok.com",
