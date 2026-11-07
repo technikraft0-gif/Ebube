@@ -18,8 +18,6 @@ const nextConfig: NextConfig = {
       // Old routes that were listed in the previous sitemap.
       { source: "/sections/:section", destination: "/", permanent: true },
       { source: "/og-image", destination: "/opengraph-image", permanent: true },
-      { source: "/victors%20CV.pdf", destination: "/ebube-udorie-cv.pdf", permanent: true },
-      { source: "/victor-onyemaechi-cv.pdf", destination: "/ebube-udorie-cv.pdf", permanent: true },
     ]
   },
   async headers() {

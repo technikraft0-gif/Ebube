@@ -2,7 +2,7 @@
 // so they recrawl in minutes instead of weeks. Run after each production deploy: npm run seo:indexnow
 import { readFileSync } from "node:fs"
 
-const siteUrl = (process.env.NEXT_PUBLIC_SITE_URL ?? "https://victor-onyemaechi.vercel.app").replace(/\/$/, "")
+const siteUrl = (process.env.NEXT_PUBLIC_SITE_URL ?? "https://technikraft.vercel.app").replace(/\/$/, "")
 const key = readFileSync(new URL("../src/content/site.ts", import.meta.url), "utf8").match(/indexNowKey:\s*"([^"]+)"/)?.[1]
 if (!key) throw new Error("indexNowKey is not set in src/content/site.ts")
 

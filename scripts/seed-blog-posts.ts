@@ -51,7 +51,7 @@ const seeds: Seed[] = [
     excerpt: "What working with me looks like: four stages, 2 to 4 weeks for a website, 6 to 12 weeks for an MVP with payments, and a WAT (UTC+1) schedule that overlaps with Europe.",
     tags: ["Hiring", "Freelance"],
     seoTitle: "Hiring a Remote Full-Stack Developer from Lagos",
-    seoDescription: "Timelines, process, time zones and handover when you hire Victor Conqueror, a remote full-stack and AI engineer in Lagos, Nigeria (WAT, UTC+1).",
+    seoDescription: "Timelines, process, time zones and handover when you hire Ebube Udorie (Technikraft), a remote full-stack and mobile engineer in Uyo, Nigeria (WAT, UTC+1).",
     publishedAt: "2026-10-20T02:03:00.000Z",
   },
 ]
