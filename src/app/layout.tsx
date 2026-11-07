@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next"
 import localFont from "next/font/local"
+import { Analytics } from "@vercel/analytics/next"
 import { site, site as siteSettings } from "@/content"
 import { getPortfolioContent } from "@/lib/portfolio-content"
 import { VisitTracker } from "@/components/analytics/visit-tracker"
@@ -104,7 +105,11 @@ export const viewport: Viewport = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`${delius.variable} ${fredoka.variable} ${jetbrainsMono.variable}`}>
-      <body className="font-sans antialiased">{children}<VisitTracker /></body>
+      <body className="font-sans antialiased">
+        {children}
+        <VisitTracker />
+        <Analytics />
+      </body>
     </html>
   )
 }
